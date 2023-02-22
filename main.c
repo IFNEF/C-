@@ -7,11 +7,11 @@ int main()
     scanf("%lf",&a);
     double z=a-23.0;
     if(z>=0){
-        printf("ÕÒÄú%.2f\n",z);
+        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
     }
     else
     {
-        printf("Ã»Ç®¹ö");
+        printf("æ²¡é’±æ»šã€‚");
     }
     return 0;
 }
