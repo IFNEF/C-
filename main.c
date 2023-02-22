@@ -3,15 +3,20 @@
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("ÊâæÈõ∂Ôºö%.2fÂÖÉ\n",z);
+    int a,b,c,d=0;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    int e,f=0;
+    e=abs(60*(a-c)+b-d);
+    if(e>60)
+    {
+        f=e%60;
+        e=e/60;
+        printf("¡Ω’ﬂœ‡≤Ó ±º‰%d ±%d∑÷",e,f);
     }
     else
     {
-        printf("Ê≤°Èí±Êªö„ÄÇ");
+    f=e;
+    printf("¡Ω’ﬂœ‡≤Ó ±º‰%d∑÷",f);
     }
     return 0;
 }
