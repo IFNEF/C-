@@ -9,6 +9,6 @@ int main()
     {
         m/=10;
     }
-    printf("这是%d位数",i);
+    printf("杩欐槸%d浣嶆暟",i);
     return 0;
 }
