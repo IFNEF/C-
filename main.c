@@ -3,13 +3,16 @@
 
 int main()
 {
-    int a=0,n=0;
-    scanf("%d",&a);
+    int a=rand()%100+1,b=0;
     do{
-        a/=10;
-        n++;
+
+    scanf("%d",&b);
+        if(b>a)
+        printf("大了\n");
+        else if(b<a)
+            printf("小了\n");
     }
-    while(a>0);
-    printf("鎮ㄨ緭鍏ョ殑鏁板瓧浣嶆暟涓猴細%d\n", n);
+    while(b!=a);
+    printf("您猜对了");
     return 0;
 }
