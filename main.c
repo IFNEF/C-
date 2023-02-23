@@ -7,6 +7,7 @@ int main()
     scanf("%d",&a);
     int b=a/30.48;
     int c=((a/30.48)-b)*12;
-    printf("ÄãµÄÉí¸ßÎª%d³ß%d´ç",b,c);
+    printf("ä½ çš„èº«é«˜ä¸º%då°º%då¯¸",b,c);
     return 0;
 }
+
