@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int t,l,h,m=0;
+    scanf("%d%d",&t,&l);
+    h=t/100+l/60;
+    m=t%100+l%60;
+    if (m>=60)
+    {
+        h=h+m/60;
+        m=m%60;
+    }
+    printf("改变后时间为%d时%d分",h,m);
+    return 0;
+}
