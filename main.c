@@ -10,6 +10,6 @@ int main()
         n++;
     }
     while(a>0);
-    printf("您输入的数字位数为：%d\n", n);
+    printf("鎮ㄨ緭鍏ョ殑鏁板瓧浣嶆暟涓猴細%d\n", n);
     return 0;
 }
