@@ -9,7 +9,7 @@ int main()
     s=score/10;
     switch(s)
     {
-       case 6:
+    case 6:
     level='d';
     break;
     case 7:
@@ -28,6 +28,6 @@ int main()
     level='e';
     break;
     }
-    printf("ÄúµÄµÈ¼¶%c",level);
+    printf("æ‚¨çš„ç­‰çº§%c",level);
     return 0;
 }
