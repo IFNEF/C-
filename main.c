@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
-    }
-    else
+    int a=0,arm=1;
+    scanf("%d",&a);
+    for(int i=2;i<a;i++)
     {
-        printf("æ²¡é’±æ»šã€‚");
+      if(a%i==0){
+        arm=0;
+        printf("¹«ÒòÊý£º%d\n",i);}
     }
+     if(arm==1)//×¢Òâ==²Å´ú±íµÈÓÚ£¬=´ú±í¸³ÖµÔËËã·û
+        printf("ÕâÊÇËØÊý");
+        else
+        printf("Õâ²»ÊÇËØÊý");
     return 0;
 }
