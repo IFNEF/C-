@@ -1,17 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
-    }
-    else
+    for(int a=2;a<100;a++)
     {
-        printf("æ²¡é’±æ»šã€‚");
+        int arm=1;
+    for(int i=2;i<a;i++)
+    {
+      if(a%i==0)
+        {
+        arm=0;break;
+      }
+      }
+     if(arm==1)//×¢Òâ==²Å´ú±íµÈÓÚ£¬=´ú±í¸³ÖµÔËËã·û
+        printf("%d ",a);
     }
     return 0;
 }
