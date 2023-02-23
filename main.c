@@ -3,15 +3,31 @@
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("找零：%.2f元\n",z);
-    }
-    else
+    int score=0,s=0;
+    char level;
+    scanf("%d",&score);
+    s=score/10;
+    switch(s)
     {
-        printf("没钱滚。");
+       case 6:
+    level='d';
+    break;
+    case 7:
+    level='c';
+    break;
+    case 8:
+    level='b';
+    break;
+    case 9:
+    level='a';
+    break;
+    case 10:
+    level='s';
+    break;
+    default:
+    level='e';
+    break;
     }
+    printf("���ĵȼ�%c",level);
     return 0;
 }
