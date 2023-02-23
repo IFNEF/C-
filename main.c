@@ -3,15 +3,22 @@
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("找零：%.2f元\n",z);
+    double a=0,b=0,c=0,max=0;
+    scanf("%lf%lf%lf",&a,&b,&c);
+    max=a;
+    if(max<b)
+    {
+        max=b;
+        if(max<c)
+        {
+            max=c;
+        }
     }
     else
     {
-        printf("没钱滚。");
+        if(max<c)
+        max=c;
     }
+    printf("最大值为：%lf",max);
     return 0;
 }
