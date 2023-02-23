@@ -8,11 +8,11 @@ int main()
 
     scanf("%d",&b);
         if(b>a)
-        printf("大了\n");
+        printf("澶т簡\n");
         else if(b<a)
-            printf("小了\n");
+            printf("灏忎簡\n");
     }
     while(b!=a);
-    printf("您猜对了");
+    printf("鎮ㄧ寽瀵逛簡");
     return 0;
 }
