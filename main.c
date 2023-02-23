@@ -3,15 +3,10 @@
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
-    }
-    else
-    {
-        printf("æ²¡é’±æ»šã€‚");
-    }
+    int a=0;
+    scanf("%d",&a);
+    int b=a/30.48;
+    int c=((a/30.48)-b)*12;
+    printf("ÄãµÄÉí¸ßÎª%d³ß%d´ç",b,c);
     return 0;
 }
