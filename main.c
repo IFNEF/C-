@@ -15,6 +15,6 @@ int main()
     }
     }
     while(x!=-1);
-    printf("%d¸öÊıµÄ¾ùÖµÎª%.2lf¡£",n,a);
+    printf("%dä¸ªæ•°çš„å‡å€¼ä¸º%.2lfã€‚",n,a);
     return 0;
 }
