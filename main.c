@@ -3,18 +3,12 @@
 
 int main()
 {
-    int s=0,x=0,n=0;
-    double a=0;
-    do{
-    scanf("%d",&x);
-    if(x!=-1)
-    {
-      s+=x;
-      n++;
-      a=s/n;
+    int d=0,i=0,a=0;
+    scanf("%d",&d);
+    while(d>0){
+        i=d%10;
+        printf("%d",i);
+        d/=10;
     }
-    }
-    while(x!=-1);
-    printf("%d个数的均值为%.2lf。",n,a);
     return 0;
 }
