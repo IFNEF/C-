@@ -1,17 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("找零：%.2f元\n",z);
-    }
-    else
+    int a,b,c;
+    int m=0;
+    int exit=0;
+    scanf("%d",&m);
+    for(c=1; c<m*10; c++)
     {
-        printf("没钱滚。");
+        for(b=1; b<m*5; b++)
+        {
+            for(a=1; a<m*2; a++)
+            {
+                if(a*5+b*2+c==m*10)
+                {
+                    printf("%d个五角%d个贰角%d个一角\n",a,b,c);
+                    exit=1;
+                    break;
+                }
+            }
+            if(exit==1)break;
+        }
+        if(exit==1)break;
     }
+
     return 0;
 }
