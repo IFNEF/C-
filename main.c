@@ -20,7 +20,7 @@ int main()
                     break;
                 }
             }
-            if(exit==1)break;
+            if(exit==1)break;//接力break，如果上一个break触发则自动触发，或者使用goto out;然后在需要出的地方写out:可直接跳出循环。
         }
         if(exit==1)break;
     }
