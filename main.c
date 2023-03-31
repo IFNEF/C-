@@ -3,15 +3,27 @@
 
 int main()
 {
-    int d=0,i=0,a=0,r=0;
-    scanf("%d",&d);
-    while(d>0){
-        i=d%10;
-        printf("%d",i);//700è¾“å‡º007ï¼ˆ9ä½ä»¥å†…çš„æ•°ï¼‰
-        d/=10;
-        r=r*10+i;
+    int x=0;
+    int count[10];
+    int i=0;
+    for(i=0; i<10; i++)//Êı×é³õÊ¼»¯
+    {
+        count[i]=0;
+    }
+    scanf("%d",&x);
+    while(x!=-1)//Êı¾İÍ³¼Æ
+    {
+        if(x>=0&&x<=9)
+        {
+            count[x]++;
+        }
+        scanf("%d",&x);
 
     }
-            printf("\n%d",r);//700è¾“å‡º7
+    for(i=0; i<10; i++) //Í³¼ÆÊä³ö
+    {
+
+        printf("%d£º%d\n",i,count[i]);
+    }
     return 0;
 }
