@@ -1,17 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <string.h>
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
-    }
-    else
+    const int maxNumber = 25;
+    int isPrime [maxNumber];
+    int i;
+    int x;
+    for ( i=0; i<maxNumber; i++ )//±È25Ð¡µÄÊý--ËùÓÐÊýi
     {
-        printf("æ²¡é’±æ»šã€‚");
+        isPrime[i] = 1;
     }
+    for ( x=2; x<maxNumber; x++ )//iµÄÐ¡ÓÚ25µÄËùÓÐ±¶Êý
+    {
+        if ( isPrime [x] )
+        {
+            for ( i=2; i*x<maxNumber; i++ )
+            {
+                isPrime [i*x] = 0;
+            }
+        }
+    }
+    for ( i=2; i<maxNumber; i++ )
+    {
+        if ( isPrime [i] )
+        {
+            printf("%d\t", i);
+        }
+    }
+    printf( "\n") ;
+
     return 0;
 }
+
