@@ -1,17 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("找零：%.2f元\n",z);
-    }
-    else
+    int x=0,cnt=0;
+    double sum=0;
+
+    scanf("%d",&x);
+    while(x!=-1)
     {
-        printf("没钱滚。");
+        sum+=x;
+        cnt++;
+        scanf("%d",&x);
+    }
+    if(cnt>0)
+    {
+        printf("%f",sum/cnt);
     }
     return 0;
 }
