@@ -7,7 +7,7 @@ int main()
     scanf("%d",&d);
     while(d>0){
         i=d%10;
-        printf("%d",i);//700输出007
+        printf("%d",i);//700输出007（9位以内的数）
         d/=10;
         r=r*10+i;
 
