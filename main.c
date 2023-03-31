@@ -1,17 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    double a;
-    scanf("%lf",&a);
-    double z=a-23.0;
-    if(z>=0){
-        printf("æ‰¾é›¶ï¼š%.2få…ƒ\n",z);
-    }
-    else
+    int x=0,cnt=0;
+    double sum=0;
+    int number[100];
+    printf("ÊäÈëÒÔ-1½áÎ²µÄÒ»´®Êı£º");
+    scanf("%d",&x);
+    while(x!=-1)
     {
-        printf("æ²¡é’±æ»šã€‚");
+        number[cnt]=x;
+        sum+=x;
+        cnt++;
+        scanf("%d",&x);
+    }
+    if(cnt>0)
+
+    {
+        printf("Æ½¾ùÊı£º%f\n",sum/cnt);
+        for(int i=0; i<cnt; i++)
+        {
+            if(number[i]>sum/cnt)
+            {
+                printf("±ÈÆ½¾ùÊı´óµÄÊı£º%d\n",number[i]);
+            }
+        }
     }
     return 0;
 }
